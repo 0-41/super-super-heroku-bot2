@@ -26,9 +26,9 @@ let wlcm = new Discord.RichEmbed()
 .setAuthor(member.user.username, member.user.avatarURL)
 .setDescription(`نورت السيرفر بوجودك  `)
 .setThumbnail(member.user.avatarURL)
-.setImage('صورة الترحيب')
+.setImage('./Welcome Scan.jpg')
 .setColor('RANDOM')
-client.channels.get('ايدي روم الترحيب').send(wlcm);
+client.channels.get('general').send(wlcm);
 });
 
 client.login(process.env.BOT_TOKEN);
