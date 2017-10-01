@@ -21,6 +21,14 @@ message.author.send(".Best Commands" + `  **
 **`);
     }
 });
+client.on('guildMemberAdd', member => {
+let wlcm = new Discord.RichEmbed()
+.setAuthor(member.user.username, member.user.avatarURL)
+.setDescription(`نورت السيرفر بوجودك  `)
+.setThumbnail(member.user.avatarURL)
+.setImage('صورة الترحيب')
+.setColor('RANDOM')
+client.channels.get('ايدي روم الترحيب').send(wlcm);
+});
 
-// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
