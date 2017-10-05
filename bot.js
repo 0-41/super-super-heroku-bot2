@@ -1,16 +1,11 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-  client.on('message', message => {
-    if (message.content.startsWith("avatar")) {
-        const embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setImage(`${message.mentions.users.first().avatarURL}`)
-      message.channel.sendEmbed(embed);
-    }
+const Discord = require("discord.js");
+const x5bz = new Discord.Client();
+console.log('mariam ra7t tmot al nas');
+x5bz.on('ready', () => {
+  console.log(`Logged in as ${x5bz.user.tag} !`);
+  x5bz.user.setGame(`.مريم`,`http://www.twitch.tv/v5bz`)
 });
-
-const client = [
+const x5bz4 = [
    '*** انا اسمي مريم ***',
    '*** مرحباَ ماهو اسمك ؟ ***',
    `*** اهلا بك ! انا تائهه في هذا المكان  ***`,
@@ -58,7 +53,7 @@ const client = [
    '*** احد ما خرج من المنزل ***',
    '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدنا في نشر البوت وادخل هذا السيرفر https://discord.gg/q7X8hCD ***'
 ]
- clinet.on('message', message => {
+ x5bz.on('message', message => {
  if (message.content.startsWith('.مريم')) {
   var mariam= new Discord.RichEmbed()
   .setTitle("لعبة مريم ..")
@@ -69,8 +64,7 @@ const client = [
    message.react("??")
   }
 });
-
   
 
 
-client.login(process.env.BOT_TOKEN);
+x5bz.login(process.env.BOT_TOKEN);
