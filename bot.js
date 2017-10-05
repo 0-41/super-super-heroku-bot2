@@ -75,4 +75,216 @@ x5bz.on('message', message => {
     }
 });
 
+var x1 = ".color 1"
+var x2 = ".color 2"
+var x3 = ".color 3"
+var x4 = ".color 4"
+var x5 = ".color 5"
+var x6 = ".color 6"
+var x7 = ".color 7"
+var x8 = ".color 8"
+var x9 = ".color 9"
+var x10 = ".color 10"
+x5bz.on('message', message => {
+	if (message.content === x1) {
+		message.member.addRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x2) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.addRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x3) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.addRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x4) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.addRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x5) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.addRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x6) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.addRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x7) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.addRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x8) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.addRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x9) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.addRole(message.guild.roles.find("name", "9"));
+    message.member.removeRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === x10) {
+		message.member.removeRole(message.guild.roles.find("name", "1"));
+    message.member.removeRole(message.guild.roles.find("name", "2"));
+    message.member.removeRole(message.guild.roles.find("name", "3"));
+    message.member.removeRole(message.guild.roles.find("name", "4"));
+    message.member.removeRole(message.guild.roles.find("name", "5"));
+    message.member.removeRole(message.guild.roles.find("name", "6"));
+    message.member.removeRole(message.guild.roles.find("name", "7"));
+    message.member.removeRole(message.guild.roles.find("name", "8"));
+    message.member.removeRole(message.guild.roles.find("name", "9"));
+    message.member.addRole(message.guild.roles.find("name", "10"));
+	const embed = new Discord.RichEmbed()
+	.setThumbnail(message.author.avatarURL)
+	.setFooter('Nice Color!', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.addField('Requested by:', "<@" + message.author.id + ">")
+  .setDescription(`تم تغيير اللون بنجاح`)
+  message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+if (message.content === ".colors") {
+	const embed = new Discord.RichEmbed()
+	.setColor('RANDOM')
+	.setFooter('5bz | Color', 'http://www.freeiconspng.com/uploads/color-icon-png-13.png')
+	.setDescription(`Type: .color number`)
+	.setImage('https://cdn.discordapp.com/attachments/336524558884536322/346371813720457216/colors.png')
+	message.channel.sendEmbed(embed);
+	message.react("??")
+	}
+});
+
 x5bz.login(process.env.BOT_TOKEN);
