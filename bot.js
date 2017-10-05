@@ -58,6 +58,15 @@ client.on("message", message => {
   message.channel.sendEmbed(embed);
     }
 });
+ const x5bz0 = [   '*** 1 ***',   '*** 2  ***',   '*** 3 ***',   '*** 4 ***',   '*** 5 ***',   '*** 6 ***',    '*** 7 ***',   '*** 8***',   '*** 9 ***',   '*** 10 ***',]
+client.on('message', message => {
+if (message.content.startsWith('عشوائي')) {
+  var 3sh = new Discord.RichEmbed()
+  .setColor('RANDOM')
+  .setDescription(`${x5bz0[Math.floor(Math.random() * x5bz0.length)]}`)
+   message.channel.sendEmbed(3sh);
+}
+ });
 
 
 client.login(process.env.BOT_TOKEN);
