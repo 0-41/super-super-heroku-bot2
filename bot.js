@@ -20,11 +20,14 @@ message.author.send(".Best Commands" + `  **
 © Made By :RoyalDev ™.
 **`);
     }
-});
-client.on("guildCreate", guild => {
-  console.log(` شخص ما اضاف بوت  في سيرفر اسمه 
-
-! ${guild.name} اونر سيرفر هو ${guild.owner.user.username}!`)
+});    
+if (message.content === ! + "cdate") {
+        var currentTime = new Date(),
+            السنة = currentTime.getFullYear(),
+            الشهر = currentTime.getMonth() + 1,
+            اليوم = currentTime.getDate();
+        message.channel.sendMessage( "Date : " + اليوم + "-" + الشهر + "-" +السنة)
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
