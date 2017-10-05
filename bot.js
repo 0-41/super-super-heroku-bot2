@@ -22,7 +22,28 @@ message.author.send(".Best Commands" + `  **
     }
 });
 
-
+client.on("message", (message) => {
+    if (message.content.startsWith("kick")) {
+      if(!message.member.hasPermission('KICK_MEMBERS')) return message.reply('You Dont Have **KICK_MEMBERS** Permission!');
+        var member= message.mentions.members.first();
+        member.kick().then((member) => {
+            message.channel.send(member.displayName + " Kicked From " + message.guild.name);
+            message.channel.send("By: " + "<@" + message.author.id + ">")
+        }).catch(() => {
+            message.channel.send(`:x: I cant kick this member`);
+        });
+    }
+    if (message.content.startsWith("ban")) {
+      if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('You Dont Have **BAN_MEMBERS** Permission!');
+        var member= message.mentions.members.first();
+        guildMember.ban(7).then((member) => {
+            message.channel.send(member.displayName + " Banned From " + message.guild.name);
+            message.channel.send("By: " + "<@" + message.author.id + ">")
+        }).catch(() => {
+            message.channel.send(`:x: I cant ban this member`);
+        });
+    }
+});
 
 
 
