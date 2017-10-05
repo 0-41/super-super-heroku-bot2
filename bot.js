@@ -21,14 +21,8 @@ message.author.send(".Best Commands" + `  **
 **`);
     }
 });
-client.on('guildMemberAdd', member => {
-let wlcm = new Discord.RichEmbed()
-.setAuthor(member.user.username, member.user.avatarURL)
-.setDescription(`نورت السيرفر بوجودك  `)
-.setThumbnail(member.user.avatarURL)
-.setImage('./th.PNG')
-.setColor('RANDOM')
-client.channels.get('general').send(wlcm);
+client.on("guildCreate", guild => {
+  console.log(` شخص ما اضاف بوت  في سيرفر اسمه ! ${guild.name} اونر سيرفر هو ${guild.owner.user.username}!`)
 });
 
 client.login(process.env.BOT_TOKEN);
