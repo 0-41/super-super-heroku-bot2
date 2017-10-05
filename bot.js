@@ -22,11 +22,7 @@ message.author.send(".Best Commands" + `  **
     }
 });
 
-bot.on("ready", () => {
-  console.log("tt");
-  bot.user.setGame('With Oliver');
 
-});
 
 
 
