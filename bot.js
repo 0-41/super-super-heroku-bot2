@@ -326,4 +326,12 @@ x5bz.on('message', message => {
   })
 }
 });
+   client.on('message', message => {
+     if (message.content === "السلام عليكم") {
+      const embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setDescription('وعليكم السلام')
+  message.channel.sendEmbed(embed);
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
