@@ -336,7 +336,7 @@ x5bz.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
-client.on("message", message => {
+x5bz.on("message", message => {
       if (message.content === "ping") {
       const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
