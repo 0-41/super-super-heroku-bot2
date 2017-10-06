@@ -336,4 +336,12 @@ x5bz.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
+client.on("message", message => {
+      if (message.content === "ping") {
+      const embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
+  message.channel.sendEmbed(embed);
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
