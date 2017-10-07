@@ -346,8 +346,8 @@ x5bz.on("message", message => {
 	
 	
 });
-**كود الهيلب من  رويال ديف **
-```js
+
+
    x5bz.on('message', message => {
      if (message.content === "-help") {
 message.author.send(".Best Commands" + `  **
@@ -368,5 +368,5 @@ message.author.send(".Best Commands" + `  **
 **`);
     }
 });
-```
+
 x5bz.login(process.env.BOT_TOKEN);
