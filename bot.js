@@ -3,7 +3,7 @@ const x5bz = new Discord.Client();
 console.log('mariam ra7t tmot al nas');
 x5bz.on('ready', () => {
   console.log(`Logged in as ${x5bz.user.tag} !`);
-  x5bz.user.setGame(`.مريم`,`http://www.twitch.tv/v5bz`)
+  x5bz.user.setGame(`.السلام عليكم`,`http://www.twitch.tv/v5bz`)
 });
 const x5bz4 = [
    '*** انا اسمي مريم ***',
@@ -366,6 +366,16 @@ message.author.send(".Best Commands" + `  **
 ".support"
 .
 **`);
+    }
+});
+
+x5bz.on('message', message => {
+    if (message.content === ! + "cdate") {
+        var currentTime = new Date(),
+            السنة = currentTime.getFullYear(),
+            الشهر = currentTime.getMonth() + 1,
+            اليوم = currentTime.getDate();
+        message.channel.sendMessage( "Date : " + اليوم + "-" + الشهر + "-" +السنة)
     }
 });
 
