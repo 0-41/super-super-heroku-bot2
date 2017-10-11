@@ -66,6 +66,6 @@ const x5bz4 = [
    message.channel.sendEmbed(mariam);
    message.react("👧")
   }
-});```
+});
 
 x5bz.login(process.env.BOT_TOKEN);
