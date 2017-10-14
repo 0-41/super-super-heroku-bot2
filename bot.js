@@ -56,8 +56,7 @@ const x5bz4 = [
  x5bz.on('message', message => {
  if (message.content.startsWith('.مريم')) {
  ```css
- x5bz.on('message', message => {
- if (message.content.startsWith('.مريم')) {
+ 
   var mariam= new Discord.RichEmbed()
   .setTitle("لعبة مريم ..")
   .setColor('RANDOM')
