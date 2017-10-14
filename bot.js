@@ -53,7 +53,7 @@ const x5bz4 = [
    '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدنا في نشر البوت وادخل هذا السيرفر https://discord.gg/q7X8hCD ***'
 ]
  x5bz.on('message', message => {
- if (message.content.startsWith('.مريم')) {
+ if (message.content.startsWith('-مريم')) {
 
  
   var mariam= new Discord.RichEmbed()
