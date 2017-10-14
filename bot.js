@@ -191,7 +191,7 @@ x5bz.on('message', message => {
     }
 });
 var prefix = "-";
-client.on('message', message => {
+x5bz.on('message', message => {
     if(message.content == prefix + 'server') {
         var servername = message.guild.name
         var اونر = message.guild.owner
