@@ -171,5 +171,15 @@ message.author.send(".Best Commands" + `  **
 **`);
     }
 });
+x5bz.on('message', message => {
+     if (message.content === "-ping") {
+      const embed = new Discord.RichEmbed()
+ 
+  .setColor("#FF0000")
+  .addField('``سرعة أتصال الــبوت`` ' , `${Date.now() - message.createdTimestamp}` + ' ms`')
+                 .setFooter(`© RoyalDev ™.`, 'https://cdn.discordapp.com/attachments/334701598196367370/335685097351151620/royalbot.png')
 
+  message.channel.sendEmbed(embed);
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
