@@ -66,5 +66,89 @@ const x5bz4 = [
    message.react("👧")
   }
 });
+var prefix="!";
+let fetchMember = (guild, userResolvable, callback) => {
+    if (typeof callback !== 'function') {
+        return;
+    }
 
+    guild.fetchMember(userResolvable)
+        .then((response) => callback(response));
+};
+
+let processRequest = (msg, hex) => {
+    let guild = msg.guild;
+    let author = msg.author;
+
+    fetchMember(guild, author, (response) => {
+        createGuildRole(response, hex, msg)
+    });
+};
+
+let createGuildRole = (guildMember, hex, msg) => {
+    let guild = guildMember.guild;
+    let newRole = {
+        name: `color-${guildMember.user.username}`,
+        color: hex
+    };
+    let existingRole = null;
+
+    existingRole = guild.roles.find('name', newRole.name);
+
+    if (existingRole) {
+        existingRole.edit(newRole)
+            .then((roleData) => {
+                msg.channel.sendMessage(`**ثم تغير اللون بنجاح**`);
+                assignGuildMemberRole(guildMember, existingRole, msg);
+            });
+    } else {
+        guild.createRole(newRole)
+            .then((role) => {
+                msg.channel.sendMessage(`**ثم تغير اللون بنجاح**`);
+                assignGuildMemberRole(guildMember, role, msg);
+            });
+    }
+};
+
+let assignGuildMemberRole = (guildMember, role, msg) => {
+    guildMember.addRole(role)
+        .then((member) => {
+            let savedRole = member.roles.find('name', role.name);
+            setRolePosition(guildMember, savedRole, msg);
+        });
+};
+
+let setRolePosition = (guildMember, role, msg) => {
+    let guild = guildMember.guild;
+    let highestPriorityPosition = guildMember.guild.roles.size - 2;
+
+    role.setPosition(highestPriorityPosition)
+        .then((role) => {
+            console.log('Successfully moved position.');
+            msg.channel.sendMessage(`**ثم تغير اللون بنجاح**`)
+        })
+        .catch((err) => {
+            console.log('Failed to move position');
+            console.error(err);
+        });
+};
+
+// By:PLAQUE
+x5bz.on("message", (messageObject) => {
+    let message = messageObject.content.trim();
+    let messageWords = message.split(' ');
+    let hexCode = '';
+    let hexRegex = new RegExp('^#(?:[0-9a-fA-F]{3}){1,2}$');
+    let errorMessage = '**خطأ في تغير اللون يجب على اللون ان يكون** `.-color #FFFFFF`.';
+
+    if (messageWords.length > 1 && messageWords[0] === prefix+'color') {
+        hexCode = messageWords[1];
+
+        if (hexRegex.test(hexCode)) {
+            processRequest(messageObject, hexCode);
+        } else {
+            messageObject.channel.sendMessage(errorMessage);
+        }
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
