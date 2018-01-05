@@ -11293,5 +11293,5 @@ message.member.addRole(message.guild.roles.find("name", "100"));
 
 
 
-clinet.login('');
+client.login(process.env.BOT_TOKEN);
 
