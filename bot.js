@@ -339,5 +339,5 @@ return message.reply("**:white_check_mark: .. تم اعطاء العضو ميو�
 
 });
 
-ج
+
 x5bz.login(process.env.BOT_TOKEN);
