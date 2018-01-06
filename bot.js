@@ -209,7 +209,7 @@ const otaku = [
   var client= new Discord.RichEmbed()
   .setTitle("لعبة الاوتاكو ..")
   .setColor('RANDOM')
-  .setDescription(`${Sra7a[Math.floor(Math.random() * Sra7a.length)]}`)
+  .setDescription(`${otaku[Math.floor(Math.random() * otaku.length)]}`)
   .setImage("https://cdn.discordapp.com/icons/303935079619624960/f8379ccb0a1708edc595e8015d2bf98c.jpg?size=128")
                   .setTimestamp()
 
