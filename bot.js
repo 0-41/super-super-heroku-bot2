@@ -62,7 +62,7 @@ const Sra7a = [
      '‏صراحه  |  ما اكثر شي ندمن عليه؟',
 	 'صراحه  |  ما هي أمنياتك المُستقبلية؟‏',
 ]
-   client.on('message', message => {
+   x5bz.on('message', message => {
  if (message.content.startsWith('f!صراحه')) {
      if(!message.channel.guild) return message.reply('** This command only for servers **');
   var client= new Discord.RichEmbed()
