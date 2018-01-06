@@ -334,7 +334,7 @@ return;
         return;
     }
 });
-   client.on('message', message => {
+   x5bz.on('message', message => {
      if (message.content === 'help') {
 message.author.send('.Best Commands' + `  **
 الالعاب :
