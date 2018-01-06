@@ -188,6 +188,34 @@ const Za7f = [
     }
 });
 
+const otaku = [
+     ' ايش الانمي الي نحبه؟',
+     '  ايش الي تكرها في انمي دراغون بول؟',
+     'منو الشخص  الي تحبه في انمي؟',
+     'منو الشخص الي تكرها في انمي؟',
+     'ايش اكثر شي يكرهك في انمي؟',
+     'ايش تحب المانقا ولا انمي؟',
+     'منو الي تتوقع راح يقتل ناروتو في انمي  بوروتو؟',
+     'منو الي راح يقدر يهزم جيرين في انمي دراغون بول؟',
+     ' اسم عائله اوبيتو؟',
+     ' من هوا معلم نارتو؟',
+     'شخصيه ظهرت في انمي هجوم العمالقه تم قتل والديها وقام بتربيتها والد إيرين؟',
+     ' ما هوا إلهاكي؟',
+   ,
+]
+   x5bz.on('message', message => {
+ if (message.content.startsWith('لعبة الاوتاكو')) {
+     if(!message.channel.guild) return message.reply('** This command only for servers **');
+  var client= new Discord.RichEmbed()
+  .setTitle("لعبة الاوتاكو ..")
+  .setColor('RANDOM')
+  .setDescription(`${Sra7a[Math.floor(Math.random() * Sra7a.length)]}`)
+  .setImage("https://cdn.discordapp.com/icons/303935079619624960/f8379ccb0a1708edc595e8015d2bf98c.jpg?size=128")
+                  .setTimestamp()
 
+   message.channel.sendEmbed(client);
+   message.react("??")
+    }
+});
 
 x5bz.login(process.env.BOT_TOKEN);
