@@ -334,17 +334,6 @@ return;
         return;
     }
 });
-   x5bz.on('message', message => {
-     if (message.content === 'help') {
-message.author.send('.Best Commands' + `  **
-الالعاب :
--مريم
--خواطر
--عقاب
--لعبة الاوتاكو
--صراحة
-
-    }
-});
+  
 
 x5bz.login(process.env.BOT_TOKEN);
