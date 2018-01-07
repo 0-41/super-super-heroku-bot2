@@ -572,5 +572,6 @@ x5bz.on('message', message => {
                   message.reply("**__تم فتح الشات__:white_check_mark:**")
               });
                 }
+	});
 
 x5bz.login(process.env.BOT_TOKEN);
