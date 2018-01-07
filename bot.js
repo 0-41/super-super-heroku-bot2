@@ -420,7 +420,7 @@ x5bz.on('message', function(msg) {
     }
   });
 
-   client.on("message", msg => {
+   x5bz.on("message", msg => {
   if(msg.content.startsWith ("id")) {
     if(!msg.channel.guild) return msg.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
       const embed = new Discord.RichEmbed();
