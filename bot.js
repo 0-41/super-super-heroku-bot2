@@ -345,12 +345,6 @@ const zead = [
 
 
 
-const client = new Discord.Client();
-x5bz.on('ready', () => {
-  client.user.setGame(`-help`,'https://www.twitch.tv/ProGamer44');
-  console.log('Im Ready!');
-});
-/*ProGamer44*/
 x5bz.on('message', message => {
 if (message.content.split(' ')[0] == '-bc')
  message.guild.members.forEach( member => {
