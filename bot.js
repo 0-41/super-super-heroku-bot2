@@ -465,5 +465,20 @@ x5bz.on('message', msg => {
   msg.channel.send({embed});
     }
 });
+ client.on('message' , message => {
+
+    if (message.content === "invite") {
+        if(!message.channel.guild) return message.reply('**الآمر فقط في السيرفرات**');
+     const embed = new Discord.RichEmbed()
+ .setColor("RANDOM")
+ .setThumbnail(client.user.avatarURL)     
+ .setDescription("Add me" + `
+ **
+رابط البوت | https://discordapp.com/oauth2/authorize?=&client_id=398757840078110720&scope=bot&permissions=8200
+ **
+`);
+  message.author.sendEmbed(embed);
+   }
+});
 
 x5bz.login(process.env.BOT_TOKEN);
