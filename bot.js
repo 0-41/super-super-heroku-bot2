@@ -575,7 +575,7 @@ x5bz.on('message', message => {
 	});
 
 x5bz.on('message', (message) => {
-    if (message.content.startsWith('kick')) {
+    if (message.content.startsWith('اطرده بالله ')) {
         var member= message.mentions.members.first();
         member.kick().then((member) => {
             message.channel.send(member.displayName + ' تم طرد هذا الشخص من السيرفر');
