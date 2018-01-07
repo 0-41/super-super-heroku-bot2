@@ -401,38 +401,4 @@ x5bz.on('message', message => {
     }
 });
 
-
-x5bz.on('message', (message) => {
-    if (message.content.startsWith('kick')) {
-        var member= message.mentions.members.first();
-        member.kick().then((member) => {
-            message.channel.send(member.displayName + ' تم طرد هذا الشخص من السيرفر');
-        }).catch(() => {
-            message.channel.send(`:x:`);
-        
-    }
-});
-x5bz.on('message', message => {
-      if (message.content === '-ping') {
-      const embed = new Discord.RichEmbed()
-  .setColor('#0000FF')
-  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
-  message.channel.sendEmbed(embed);
-    }
-});
-
- x5bz.on('message', message => {
-     if (message.content === '-bot') {
-     let embed = new Discord.RichEmbed()
-
-  .setColor('#51cde6')
-               .setFooter(copyright   tm., 'https://cdn.discordapp.com/icons/303935079619624960/f8379ccb0a1708edc595e8015d2bf98c.jpg?size=128')
-  .addField('Playing on' , client.guilds.size)
-
-
-  message.channel.sendEmbed(embed);
-
-    }
-});
-
 x5bz.login(process.env.BOT_TOKEN);
