@@ -453,7 +453,7 @@ x5bz.on('message', message => {
     }
   });
 
-client.on('message', msg => {
+x5bz.on('message', msg => {
     if(msg.author.bot) return;
     if(msg.content ==='avatar'){ 
         const embed = new Discord.RichEmbed()
