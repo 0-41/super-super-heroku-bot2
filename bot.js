@@ -471,7 +471,7 @@ x5bz.on('message', msg => {
         if(!message.channel.guild) return message.reply('**الآمر فقط في السيرفرات**');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
- .setThumbnail(client.user.avatarURL)     
+ .setThumbnail(x5bz.user.avatarURL)     
  .setDescription("Add me" + `
  **
 رابط البوت | https://discordapp.com/oauth2/authorize?=&client_id=398757840078110720&scope=bot&permissions=8200
