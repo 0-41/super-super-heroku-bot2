@@ -465,7 +465,7 @@ x5bz.on('message', msg => {
   msg.channel.send({embed});
     }
 });
- client.on('message' , message => {
+ x5bz.on('message' , message => {
 
     if (message.content === "invite") {
         if(!message.channel.guild) return message.reply('**الآمر فقط في السيرفرات**');
