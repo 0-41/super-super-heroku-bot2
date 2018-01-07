@@ -437,32 +437,7 @@ x5bz.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
-x5bz.on('guildMemberAdd', member => {
-  let guild = member.guild;
-  guild.defaultChannel.sendMessage('', {embed: {
-  color: 808080,
-  author: {
-    name: member.user.username,
-    icon_url: member.user.avatarURL
-  },
-  title: guild.name,
-  description: 'منور السيرفر يا قلبي !',
-}}).catch(console.error);
-  }
-);
-x5bz.on('guildMemberRemove', member => {
-  let guild = member.guild;
-  guild.defaultChannel.sendMessage('', {embed: {
-  color: 808080,
-  author: {
-    name: member.user.username,
-    icon_url: member.user.avatarURL
-  },
-  title: guild.name,
-  description: ' احسن,
-}}).catch(console.error);
-  }
-);
+
  x5bz.on('message', message => {
      if (message.content === '-bot') {
      let embed = new Discord.RichEmbed()
