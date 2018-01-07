@@ -401,24 +401,7 @@ x5bz.on('message', message => {
     }
 });
 
-  x5bz.on('message', message => {
-	      var prefix = "-";
-      if (message.content.startsWith(prefix + 'clear')) {
-        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`You Don't Have [*MANAGE_MESSAGES*] Permission `).catch(console.error);
-    message.delete()
-    if(!message.channel.guild) return;
-let args = message.content.split(" ").slice(1);
 
-  const messagecount = parseInt(args.join(' '));
-
-  message.channel.fetchMessages({
-  
-    limit: messagecount
-  
-}).then(messages => message.channel.bulkDelete(messages));
-};
-
-});
 x5bz.on('message', (message) => {
     if (message.content.startsWith('kick')) {
         var member= message.mentions.members.first();
@@ -426,7 +409,7 @@ x5bz.on('message', (message) => {
             message.channel.send(member.displayName + ' تم طرد هذا الشخص من السيرفر');
         }).catch(() => {
             message.channel.send(`:x:`);
-        });
+        
     }
 });
 x5bz.on('message', message => {
@@ -468,10 +451,6 @@ x5bz.on('message', message => {
               },
               title: 'بسبب النشر ' + member.displayName + ' تم طرد',
               color: 490101,
-              }
-            });
-        }
-      ) 
-    }
+             }
 });
 x5bz.login(process.env.BOT_TOKEN);
