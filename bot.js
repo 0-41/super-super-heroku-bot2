@@ -584,4 +584,24 @@ x5bz.on('message', (message) => {
         });
     }
 });
+x5bz.on('message', (message) => {
+    if (message.content.startsWith('بند ذا ')) {
+      if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('⚠ ماعندك الصلاحيات');
+        var member= message.mentions.members.first();
+        member.ban().then((member) => {
+            message.channel.send(member.displayName + ' اطلللعععع برررااااا :wave: ');
+        }).catch(() => {
+            message.channel.send('Error :_:');
+        });
+    }
+});
+x5bz.on('message', message => {
+  if(message.content === ('امسح')) {
+        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('** لا يوجد لديك برمشن *MANAGE_MESSAGES* **').catch(console.error);
+  const params = message.content.split(' ').slice(1)
+    let messagecount = parseInt(params[0]);
+    message.channel.fetchMessages({limit: messagecount})
+        .then(messages => message.channel.bulkDelete(messages));
+  }
+});
 x5bz.login(process.env.BOT_TOKEN);
