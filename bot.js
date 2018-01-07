@@ -549,7 +549,7 @@ return message.reply("**:white_check_mark: .. تم فك الميوت عن الش
 
 x5bz.on('message', message => {
 
-       if(message.content === "f!mutechannel") {
+       if(message.content === "قفل الشات") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
@@ -561,7 +561,7 @@ x5bz.on('message', message => {
               });
                 }
 //viper
-    if(message.content === "f!unmutechannel") {
+    if(message.content === "افتح الشات") {
                         if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__ليس لديك صلاحيات__**');
