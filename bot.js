@@ -377,7 +377,126 @@ x5bz.on("message", message => {
                           }
 });
 
+x5bz.on('message', message => {
+     if (message.content === "T~help") {
+     let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('     **T~ping** ' ,' **سرعة إتصال البوت** ')
+.addField('     **T~id**  ' ,' **معلومــات عــن حســابــك** ')
+.addField('     **T~say** ' , '**يكرر الكلام الذي تقولة**')
+.addField('     **T~info** ' ,' ** معلومات عن السيرفر**')
+.addField('     **T~avatar** ' , '**صورتك في الدسكورد أو صورة الشخص المذكور**')
+.addField('     **معلومة** ' , '**لإظهار معلومة عشوائية**')
+.addField('     **لإظهار بعض صور الحيوانات** ' ,' **حيوانات ** ')
+.addField('     ** ** ' ,' ** ** ')
+.addField('     ** ** ' ,' ** أوآمر الإدآرة ** ')
+.addField('     **T~kick ** ' ,' ** للطرد  ** ')
+.addField('     **T~bc ** ' ,' ** للبرودكاست ** ')
+.addField('     **T~clear** ' , '**لـ مسح الشات** ')
+.addField('     **T~roles** ' , '**لـ اظهار الرتب الخاصة في السيرفر** ')
+.addField('للأستفسار أو الرد على أسئلتكم وأفكـــاركم كلمني على الديسكورد ' , '**! ҜṦẰ - KBOOSH - كبوش—Ƴ丅 0.3K#3128**')
+.addField('**لدعوة البوت للسيرفر ..**' , '**https://discordapp.com/oauth2/authorize?client_id=345157648531849216&scope=bot&permissions=0**')
+.setColor('RANDOM')
+  message.channel.sendEmbed(embed);
+    }
+});
+
+  x5bz.on('message', message => {
+	      var prefix = "-";
+      if (message.content.startsWith(prefix + 'clear')) {
+        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`You Don't Have [*MANAGE_MESSAGES*] Permission `).catch(console.error);
+    message.delete()
+    if(!message.channel.guild) return;
+let args = message.content.split(" ").slice(1);
+
+  const messagecount = parseInt(args.join(' '));
+
+  message.channel.fetchMessages({
+  
+    limit: messagecount
+  
+}).then(messages => message.channel.bulkDelete(messages));
+};
+
+});
+x5bz.on('message', (message) => {
+    if (message.content.startsWith('kick')) {
+        var member= message.mentions.members.first();
+        member.kick().then((member) => {
+            message.channel.send(member.displayName + ' تم طرد هذا الشخص من السيرفر');
+        }).catch(() => {
+            message.channel.send(`:x:`);
+        });
+    }
+});
+x5bz.on('message', message => {
+      if (message.content === '-ping') {
+      const embed = new Discord.RichEmbed()
+  .setColor('#0000FF')
+  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
+  message.channel.sendEmbed(embed);
+    }
+});
+x5bz.on('guildMemberAdd', member => {
+  let guild = member.guild;
+  guild.defaultChannel.sendMessage('', {embed: {
+  color: 808080,
+  author: {
+    name: member.user.username,
+    icon_url: member.user.avatarURL
+  },
+  title: guild.name,
+  description: 'منور السيرفر يا قلبي !',
+}}).catch(console.error);
+  }
+);
+x5bz.on('guildMemberRemove', member => {
+  let guild = member.guild;
+  guild.defaultChannel.sendMessage('', {embed: {
+  color: 808080,
+  author: {
+    name: member.user.username,
+    icon_url: member.user.avatarURL
+  },
+  title: guild.name,
+  description: ' احسن,
+}}).catch(console.error);
+  }
+);
+ x5bz.on('message', message => {
+     if (message.content === '-bot') {
+     let embed = new Discord.RichEmbed()
+
+  .setColor('#51cde6')
+               .setFooter(copyright   tm., 'https://cdn.discordapp.com/icons/303935079619624960/f8379ccb0a1708edc595e8015d2bf98c.jpg?size=128')
+  .addField('Playing on' , client.guilds.size)
 
 
+  message.channel.sendEmbed(embed);
 
+    }
+});
+x5bz.on('message', message => {
+ if (message.content.includes('discord.gg')){
+                     if(!message.channel.guild) return message.reply ('')
+                 if (!message.member.hasPermissions(['MANAGE_MESSAGES'])){
+    message.channel.send('kick <@' + message.author.id + '>')
+    message.delete() 
+    }
+ }
+       if (message.content.startsWith("kick ")) {
+          if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply();
+          var member= message.mentions.members.first();
+          member.kick().then((member) => {
+              message.channel.sendMessage("", {embed: {
+              author: {
+              },
+              title: 'بسبب النشر ' + member.displayName + ' تم طرد',
+              color: 490101,
+              }
+            });
+        }
+      ) 
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
