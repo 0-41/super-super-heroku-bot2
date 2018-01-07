@@ -575,10 +575,10 @@ x5bz.on('message', message => {
 	});
 x5bz.on('message', message => {
   if (message.author.x5bz) return;
-  if (!message.content.startsWith()) return;
+  if (!message.content.startsWith( ) return;
 
   let command = message.content.split(" ")[0];
-  command = command.slice(.length);
+  command = command.slice;
 
   let args = message.content.split(" ").slice(1);
 
