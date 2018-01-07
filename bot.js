@@ -573,6 +573,7 @@ x5bz.on('message', message => {
               });
                 }
 	});
+var prefix = "."
 x5bz.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -589,13 +590,13 @@ x5bz.on('message', message => {
   if(!message.guild.member(x5bz.user).hasPermission("KICK_MEMBERS")) return message.reply("**I Don't Have ` KICK_MEMBERS ` Permission**");
   let user = message.mentions.users.first();
   let reason = message.content.split(" ").slice(2).join(" ");
-  /*let b5bzlog = x5bz.channels.find("name", "5bz-log");
+  /*let b5bzlog = client.channels.find("name", "5bz-log");
 
   if(!b5bzlog) return message.reply("I've detected that this server doesn't have a 5bz-log text channel.");*/
   if (message.mentions.users.size < 1) return message.reply("**منشن شخص**");
   if(!reason) return message.reply ("**اكتب سبب الطرد**");
   if (!message.guild.member(user)
-  .kickable) return message.reply("**لايمكنني طرد شخص اعلى من رتبتي يرجه اعطاء البوت رتبه عالي**");
+  .kickable) return message.reply("**لايمكنني طرد شخص اعلى من رتبتي**");
 
   message.guild.member(user).kick();
 
@@ -611,5 +612,4 @@ x5bz.on('message', message => {
   })
 }
 });
-
 x5bz.login(process.env.BOT_TOKEN);
