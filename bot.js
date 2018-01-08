@@ -657,9 +657,17 @@ x5bz.on('message', msg => {
 	      msg.channel.sendMessage('f!ct  anime');    
 	      msg.channel.sendMessage('f!ct  chat');
 	      msg.channel.sendMessage('f!cv  مشاهدة انمي');
-	  	      msg.channel.sendMessage('f!cv  اغاني');
-	  	      msg.channel.sendMessage('f!cv  سوالف');
-	  	      msg.channel.sendMessage('f!cv  طقطقة');
+	      msg.channel.sendMessage('f!cv  اغاني');
+	      msg.channel.sendMessage('f!cv  سوالف');
+	      msg.channel.sendMessage('f!cv  طقطقة');
+	      msg.channel.sendMessage('f!cr  القائد');
+	      msg.channel.sendMessage('f!cr  مساعد القائد');
+	      msg.channel.sendMessage('f!cr  الادمن');
+	      msg.channel.sendMessage('f!cr  الاعضاء');
+
+
+
+
 
 
 
