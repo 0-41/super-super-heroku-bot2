@@ -659,7 +659,7 @@ x5bz.on('message', msg => {
 	      msg.channel.sendMessage('f!cv  مشاهدة انمي');
 	  	      msg.channel.sendMessage('f!cv  اغاني');
 	  	      msg.channel.sendMessage('f!cv  سوالف');
-	  	      msg.channel.sendMessage('f!cv  طقطقة);
+	  	      msg.channel.sendMessage('f!cv  طقطقة');
 
 
 
