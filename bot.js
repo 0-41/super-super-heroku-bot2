@@ -646,7 +646,7 @@ if (message.content.startsWith("f!cr")) {
 }
 });
 
-client.on('message', message => {
+x5bz.on('message', message => {
 if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
