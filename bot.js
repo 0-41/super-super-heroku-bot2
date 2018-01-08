@@ -646,15 +646,16 @@ if (message.content.startsWith("f!cr")) {
 }
 });
 
-  x5bz.on('message', message => {
-     if (message.content === "هلا") {
-      const embed = new Discord.RichEmbed()
-  .setColor("RANDOM")
-  .setDescription('1')
-        .setDescription('2')
 
-  message.channel.sendEmbed(embed);
-    }
+
+
+x5bz.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('1');
+	      msg.reply('2!');
+
+  }
 });
+
 
 x5bz.login(process.env.BOT_TOKEN);
