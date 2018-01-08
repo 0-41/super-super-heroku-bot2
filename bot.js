@@ -626,12 +626,22 @@ if (message.content.startsWith("f!cv")) {
 }
 });
 
-x5bz.on("message", (message) => {
+
+x5bz.on('message', message => {
+
 if (message.content.startsWith("f!cr")) {
-            if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
+             if(!message.channel.guild) return message.reply('**Commands in the server**');
+        if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply('⚠ **You do not have permissions**');
         let args = message.content.split(" ").slice(1);
-    message.guild.serversetting(args.join(' '), 'roles');
-    message.channel.sendMessage('تـم إنـشاء رتبه')
+            message.guild.createRole({
+                name : args.join(' '),
+                color : "RANDOM", 
+                permissions : [1]
+            }).then(function(role){
+                message.addRole(role)
+            })
+
 }
 });
+
 x5bz.login(process.env.BOT_TOKEN);
