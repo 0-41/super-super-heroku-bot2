@@ -646,24 +646,15 @@ if (message.content.startsWith("f!cr")) {
 }
 });
 
-x5bz.on('message', message => {
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 6; x++) {
-        message.channel.send(`سباام يولد يلعن اومم الفله `)
-	      
-          		message.channel.send(`فله `)
+  x5bz.on('message', message => {
+     if (message.content === "هلا") {
+      const embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setDescription('1')
+        .setDescription('2')
 
-		
-		.then(m =>{
-
-            count++;
-          })
-          
-        }
-      }
+  message.channel.sendEmbed(embed);
+    }
 });
-
 
 x5bz.login(process.env.BOT_TOKEN);
