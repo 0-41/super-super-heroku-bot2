@@ -626,4 +626,10 @@ if (message.content.startsWith("f!cv")) {
 }
 });
 
+x5bz.on("message", (message) => {
+if (message.content.startsWith("f!cr")) {
+            if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
+        let args = message.content.split(" ").slice(1);
+    message.guild.createChannel(args.join(' '), 'roles');
+    message.channel.sendMessage('تـم إنـشاء رتبه')
 x5bz.login(process.env.BOT_TOKEN);
