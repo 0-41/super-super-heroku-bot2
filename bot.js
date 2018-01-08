@@ -651,7 +651,7 @@ if (message.content.startsWith("f!cr")) {
 
 x5bz.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.channel.sendMessage('1');
+    msg.channel.sendMessage('f!ct  spam');
 
   }
 });
