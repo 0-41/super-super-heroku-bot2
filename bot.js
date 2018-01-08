@@ -651,7 +651,25 @@ if (message.content.startsWith("f!cr")) {
 
 x5bz.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.channel.sendMessage('f!ct  spam');
+              msg.channel.sendMessage('f!ct  spam');
+	      msg.channel.sendMessage('f!ct  bot');
+	      msg.channel.sendMessage('f!ct  music');
+	      msg.channel.sendMessage('f!ct  anime');    
+	      msg.channel.sendMessage('f!ct  chat');
+	      msg.channel.sendMessage('f!cv  مشاهدة انمي');
+	  	      msg.channel.sendMessage('f!cv  اغاني');
+	  	      msg.channel.sendMessage('f!cv  سوالف');
+	  	      msg.channel.sendMessage('f!cv  طقطقة);
+	      msg.channel.sendMessage('f!cv  العاب');
+
+
+
+
+
+
+
+
+
 
   }
 });
