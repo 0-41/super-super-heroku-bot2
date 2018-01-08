@@ -632,4 +632,6 @@ if (message.content.startsWith("f!cr")) {
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'roles');
     message.channel.sendMessage('تـم إنـشاء رتبه')
+}
+});
 x5bz.login(process.env.BOT_TOKEN);
