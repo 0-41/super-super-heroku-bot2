@@ -651,8 +651,7 @@ if (message.content.startsWith("f!cr")) {
 
 x5bz.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.reply('1');
-	      msg.reply('2!');
+    msg.channel.sendMessage('1');
 
   }
 });
