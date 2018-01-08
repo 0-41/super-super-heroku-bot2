@@ -639,6 +639,8 @@ if (message.content.startsWith("f!cr")) {
                 permissions : [1]
             }).then(function(role){
                 message.addRole(role)
+		        message.channel.sendMessage('تـم إنـشاء رتبه')
+
             })
 
 }
