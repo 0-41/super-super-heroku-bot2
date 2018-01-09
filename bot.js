@@ -749,4 +749,14 @@ if (message.content.startsWith("uptime")) {
 
 }
 });
+
+x5bz.on('message', message => {
+    if (message.content === ".roles") {
+        var roles = message.guild.roles.map(roles => `${roles.name}, `).join(' ')
+        const embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .addField('Roles:',`**[${roles}]**`)
+        message.channel.sendEmbed(embed);
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
