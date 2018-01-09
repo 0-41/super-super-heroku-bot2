@@ -790,4 +790,12 @@ x5bz.on("message", message => {
   message.channel.sendEmbed(embed);
     }
 });
+x5bz.on('message', message => {
+x5bz.channels.get("329889409757478912").send({embed:iiMo});
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('discord.gg')){
+        message.delete()
+    return message.reply(`** No Invite Links :angry: ! **`)
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
