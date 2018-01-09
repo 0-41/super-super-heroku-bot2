@@ -650,37 +650,6 @@ if (message.content.startsWith("f!cr")) {
 
 
 
-x5bz.on('message', msg => {
-  if (msg.content === 'ping') {
-              msg.channel.sendMessage('f!ct  spam');
-	      msg.channel.sendMessage('f!ct  bot');
-	      msg.channel.sendMessage('f!ct  music');
-	      msg.channel.sendMessage('f!ct  anime');    
-	      msg.channel.sendMessage('f!ct  chat');
-	      msg.channel.sendMessage('f!cv  مشاهدة انمي');
-	      msg.channel.sendMessage('f!cv  اغاني');
-	      msg.channel.sendMessage('f!cv  سوالف');
-	      msg.channel.sendMessage('f!cv  طقطقة');
-	      msg.channel.sendMessage('f!cr  القائد');
-	      msg.channel.sendMessage('f!cr  مساعد القائد');
-	      msg.channel.sendMessage('f!cr  الادمن');
-	      msg.channel.sendMessage('f!cr  الاعضاء');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  }
-});
 
 
    x5bz.on("message", message => {
@@ -783,5 +752,24 @@ x5bz.on('message', message => {
         }
       ) 
     }
+});
+
+x5bz.on('message', msg => {
+  if (msg.content === 'السلام عليكم') {
+              msg.channel.sendMessage(':heart_eyes: :kissing_heart: وعليكم السلام ولكم منور يالغالي  ');
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  }
 });
 x5bz.login(process.env.BOT_TOKEN);
