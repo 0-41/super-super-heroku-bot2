@@ -772,4 +772,15 @@ x5bz.on('message', msg => {
 
   }
 });
+x5bz.on('message', msg => {
+  if (msg.content === 'باك') {
+              msg.channel.sendMessage(':heart_eyes: :kissing_heart: ولكم منور    ');
+	  }
+});
+x5bz.on('message', msg => {
+  if (msg.content === 'برب') {
+              msg.channel.sendMessage(':heart_eyes: :kissing_heart: تيت الله معاك  ');
+		  }
+});
+
 x5bz.login(process.env.BOT_TOKEN);
