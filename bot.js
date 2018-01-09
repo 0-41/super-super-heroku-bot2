@@ -11970,7 +11970,14 @@ message.member.addRole(message.guild.roles.find("name", "100"));
 });
 
 
-
+client.on('message', message => {
+     if (message.content === "servers") {
+     let embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .addField("**Servers: **" , client.guilds.size)
+  message.channel.sendEmbed(embed);
+    }
+});
 
 
 
