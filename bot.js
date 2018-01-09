@@ -782,5 +782,12 @@ x5bz.on('message', msg => {
               msg.channel.sendMessage(':heart_eyes: :kissing_heart: تيت الله معاك  ');
 		  }
 });
-
+x5bz.on("message", message => {
+      if (message.content === "ping") {
+      const embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
+  message.channel.sendEmbed(embed);
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
