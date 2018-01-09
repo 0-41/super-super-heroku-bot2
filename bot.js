@@ -791,9 +791,10 @@ x5bz.on("message", message => {
     }
 });
 x5bz.on('message', message => {
-x5bz.channels.get("329889409757478912").send({embed:iiMo});
     var args = message.content.split(/[ ]+/)
     if(message.content.includes('discord.gg')){
+	    x5bz.channels.get("329889409757478912").send({embed:iiMo});
+
         message.delete()
     return message.reply(`** No Invite Links :angry: ! **`)
     }
