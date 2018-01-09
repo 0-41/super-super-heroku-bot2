@@ -723,4 +723,7 @@ const prefix = '~';
             db.updateValue(`userLevel_${message.author.id + message.guild.id}`, 1).then(o => { // This returns the updated object of userLevel_ID. 
                 message.channel.send(`You sent ${messages} messages, so you leveled up! You are now level ${o.value}`) // Send their updated level to the channel.
             })
+		     }
+
+    })
 x5bz.login(process.env.BOT_TOKEN);
