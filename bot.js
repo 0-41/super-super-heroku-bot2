@@ -728,10 +728,8 @@ ctx.stroke();
 
 message.channel.sendFile(canvas.toBuffer());
 }
-}).on('ready', () => {
 
 });
-
 
 
 x5bz.login(process.env.BOT_TOKEN);
