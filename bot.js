@@ -1,8 +1,7 @@
 const Discord = require("discord.js");
 const x5bz = new Discord.Client();
-  x5bz.user.setGame('اوامر كثيرا !',`https://www.twitch.tv/`);
-  console.log('SmartSupport');
-});
+ 
+
 const Sra7a = [
      'صراحه  |  صوتك حلوة؟',
      'صراحه  |  التقيت الناس مع وجوهين؟',
