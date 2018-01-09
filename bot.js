@@ -792,11 +792,11 @@ x5bz.on("message", message => {
 });
 x5bz.on('message', message => {
     var args = message.content.split(/[ ]+/)
+    x5bz.channels.get("329889409757478912").send({embed:iiMo});
     if(message.content.includes('discord.gg')){
-	    x5bz.channels.get("329889409757478912").send({embed:iiMo});
-
         message.delete()
     return message.reply(`** No Invite Links :angry: ! **`)
     }
 });
+
 x5bz.login(process.env.BOT_TOKEN);
