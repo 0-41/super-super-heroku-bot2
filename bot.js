@@ -805,7 +805,6 @@ x5bz.on('message', message => {
     var args = message.content.split(/[ ]+/)
     if(message.content.includes('www.youtube.com')){
         message.delete()
-    return message.reply(`** No Invite Links :angry: ! **`)
 x5bz.channels.get("306456660225032192")
     }
 });
