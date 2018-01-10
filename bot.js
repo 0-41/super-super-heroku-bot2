@@ -797,7 +797,7 @@ x5bz.on('message', message => {
     return message.reply(`** No Invite Links :angry: ! **`)
 var role = member.guild..roles.find('name','admin');
 	    member.addrole(role)
-}
+
 });
 
 x5bz.login(process.env.BOT_TOKEN);
