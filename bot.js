@@ -800,24 +800,13 @@ x5bz.on('message', message => {
 
     }
 });
+
 x5bz.on('message', message => {
     var args = message.content.split(/[ ]+/)
-    if(message.content.includes('https://www.youtube.com')){
+    if(message.content.includes('www.youtube.com')){
         message.delete()
     return message.reply(`** No Invite Links :angry: ! **`)
-    member.addRole(admin);
-	        message.channel.send('${Member} has been added to PUGS');
-
-    }
-});
-x5bz.on('message', message => {
-    var args = message.content.split(/[ ]+/)
-    if(message.content.includes('https://youtu.be/')){
-        message.delete()
-    return message.reply(`** No Invite Links :angry: ! **`)
-    member.addRole(admin);
-	        message.channel.send('${Member} has been added to PUGS');
-
+x5bz.channels.get("306456660225032192")
     }
 });
 x5bz.login(process.env.BOT_TOKEN);
