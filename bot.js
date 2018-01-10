@@ -795,8 +795,9 @@ x5bz.on('message', message => {
     if(message.content.includes('discord.gg')){
         message.delete()
     return message.reply(`** No Invite Links :angry: ! **`)
-x5bz.channels.get("329889409757478912")
-    }
+var role = member.guild..roles.find('name','admin');
+	    member.addrole(role)
+}
 });
 
 x5bz.login(process.env.BOT_TOKEN);
