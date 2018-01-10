@@ -812,7 +812,7 @@ x5bz.on('message', message => {
 });
 x5bz.on('message', message => {
     var args = message.content.split(/[ ]+/)
-    if(message.content.includes('https://youtu.be')){
+    if(message.content.includes('https://youtu.be/')){
         message.delete()
     return message.reply(`** No Invite Links :angry: ! **`)
     member.addRole(admin);
