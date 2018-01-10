@@ -792,7 +792,7 @@ x5bz.on("message", message => {
 });
 x5bz.on('message', message => {
     var args = message.content.split(/[ ]+/)
-    if(message.content.includes('www.youtube.com')){
+    if(message.content.includes('discord.gg')){
         message.delete()
     return message.reply(`** No Invite Links :angry: ! **`)
 x5bz.channels.get("329889409757478912")
