@@ -810,4 +810,3 @@ x5bz.channels.get("306456660225032192")
 });
 x5bz.login(process.env.BOT_TOKEN);
 
-clinet.login(process.env.BOT_TOKEN);
