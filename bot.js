@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const clinet = new Discord.Client();
+const client = new Discord.Client();
 var prefix = "^"
 client.on('message', function(message) {
     if(message.content.startsWith(prefix + 'support')) {
