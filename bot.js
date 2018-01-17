@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var x1 = ".رتبة"
-client.on('message', message => {
-if (message.content === x1) {
-message.member.addRole(message.guild.roles.find("name", "⌐ SPRING"));
-const embed = new Discord.RichEmbed()
-.setThumbnail(message.author.avatarURL)
-.addField('Requested by:', "<@" + message.author.id + ">")
-.setDescription(`تم`)
-message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+
+client.on('message', function(message) {
+    if(message.content.startsWith(='support')) {
+        let guild = message.mentions.members.first();
+                          let ZmA = new Discord.RichEmbed()
+                  .setColor('3fcf24')
+                  .setDescription('**__:white_check_mark: تم إضافة رتبة الدعم الفني لك__**')
+        message.member.addRole(message.guild.roles.find('name', 'Support'));
+                    message.channel.send({embed:ZmA});
     }
-})
+});
 client.login(process.env.BOT_TOKEN);
