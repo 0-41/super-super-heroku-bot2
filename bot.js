@@ -808,7 +808,7 @@ x5bz.on('message', message => {
 x5bz.channels.get("306456660225032192")
     }
 });
-x5bz.on('message', function(message) {
+x5bz.on('message', message => {
     if(message.content.startsWith('support')) {
         let guild = message.mentions.members.first();
                           let ZmA = new Discord.RichEmbed()
