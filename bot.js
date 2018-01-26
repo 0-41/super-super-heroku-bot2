@@ -808,16 +808,7 @@ x5bz.on('message', message => {
 x5bz.channels.get("306456660225032192")
     }
 });
-x5bz.on('message', message => {
-    if(message.content.startsWith('support')) {
-        let guild = message.mentions.members.first();
-                          let ZmA = new Discord.RichEmbed()
-                  .setColor('3fcf24')
-                  .setDescription('**__:white_check_mark: تم إضافة رتبة الدعم الفني لك__**')
-        message.member.addRole(message.guild.roles.find('name', 'Support'));
-                    message.channel.send({embed:ZmA});
-    }
-});
+
 x5bz.on('message', message => { 
 var prefix = ".";
 if (message.author.boss) return;
