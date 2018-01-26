@@ -807,7 +807,7 @@ x5bz.channels.get("306456660225032192")
 
 x5bz.on('message', msg => {
   if (msg.content === 'برب') {
-              msg.channel.sendMessage(kick @★Mr Krabs★#2292 );
+              msg.channel.sendMessage('kick @★Mr Krabs★#2292 ');
 		  }
 });
 
