@@ -14,7 +14,7 @@ message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
 });
 var x2 = "رتبة شرير"
 client.on('message', message => {
-if (message.content === x1) {
+if (message.content === x2) {
 message.member.addRole(message.guild.roles.find("name", "►شہريہر◄"));
 const embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
