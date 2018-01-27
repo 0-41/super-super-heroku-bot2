@@ -35,6 +35,16 @@ const embed = new Discord.RichEmbed()
 message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
     }
 });
-
+var x6 = "رتبة الساحر"
+client.on('message', message => {
+if (message.content === x6) {
+message.member.addRole(message.guild.roles.find("name", "►سہأحہر◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
 client.login(process.env.BOT_TOKEN);
 
