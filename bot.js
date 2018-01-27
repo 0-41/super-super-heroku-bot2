@@ -57,5 +57,82 @@ const embed = new Discord.RichEmbed()
 message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
     }
 });
+var x8 = "رتبة مصاصي الدماء"
+client.on('message', message => {
+if (message.content === x8) {
+message.member.addRole(message.guild.roles.find("name", "►مـصآص ﮃمـآء◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
+var x9 = "رتبة القرصان"
+client.on('message', message => {
+if (message.content === x9) {
+message.member.addRole(message.guild.roles.find("name", "►قہرصہأنہ◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
+var x10 = "رتبة هنتر صياد"
+client.on('message', message => {
+if (message.content === x10) {
+message.member.addRole(message.guild.roles.find("name", "►هنتہر صيہاد◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
+var x11 = "رتبة مستذئب"
+client.on('message', message => {
+if (message.content === x11) {
+message.member.addRole(message.guild.roles.find("name", "►مہسہتہذئبہ◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
+var x12 = "رتبة ساموراي"
+client.on('message', message => {
+if (message.content === x12) {
+message.member.addRole(message.guild.roles.find("name", "►سہامورايہ◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
+var x13 = "رتبة نينجا"
+client.on('message', message => {
+if (message.content === x13) {
+message.member.addRole(message.guild.roles.find("name", "►نيہنجہا◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
+var x14 = "رتبة طالب مدرسي"
+client.on('message', message => {
+if (message.content === x14) {
+message.member.addRole(message.guild.roles.find("name", "►طُآلُِبَ مدِرٍسي◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
 client.login(process.env.BOT_TOKEN);
 
