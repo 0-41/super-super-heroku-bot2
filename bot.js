@@ -12,7 +12,7 @@ const embed = new Discord.RichEmbed()
 message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
     }
 });
-var x1 = "رتبة شرير"
+var x2 = "رتبة شرير"
 client.on('message', message => {
 if (message.content === x1) {
 message.member.addRole(message.guild.roles.find("name", "►شہريہر◄"));
