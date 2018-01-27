@@ -4,7 +4,7 @@ const client = new Discord.Client();
 var x1 = "رتبة"
 client.on('message', message => {
 if (message.content === x1) {
-message.member.addRole(message.guild.roles.find("name", "admin"));
+message.member.addRole(message.guild.roles.find("name", "support"));
 const embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
 .addField('Requested by:', "<@" + message.author.id + ">")
