@@ -134,5 +134,14 @@ const embed = new Discord.RichEmbed()
 message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
     }
 });
+
+         client.on('message', message => {
+            if (message.content === 'رتب') {
+              message.reply('رتبة طالب مدرسي.');
+              message.channel.sendFile("./ProBot_851y.jpg");
+               
+
+            }
+});
 client.login(process.env.BOT_TOKEN);
 
