@@ -46,5 +46,16 @@ const embed = new Discord.RichEmbed()
 message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
     }
 });
+var x7 = "رتبة غول"
+client.on('message', message => {
+if (message.content === x7) {
+message.member.addRole(message.guild.roles.find("name", "►غولہ◄"));
+const embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('Requested by:', "<@" + message.author.id + ">")
+.setDescription(`تم`)
+message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+    }
+});
 client.login(process.env.BOT_TOKEN);
 
