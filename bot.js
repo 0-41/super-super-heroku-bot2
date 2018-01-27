@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
  
-var x1 = "رتبة ساموراي"
+var x2 = "رتبة ساموراي"
 client.on('message', message => {
-if (message.content === x1) {
+if (message.content === x2) {
 message.member.addRole(message.guild.roles.find("name", "►سہامورايہ◄"));
 const embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
@@ -12,9 +12,9 @@ const embed = new Discord.RichEmbed()
 message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
     }
 });
-var x2 = "رتبة شرير"
+var x3 = "رتبة شرير"
 client.on('message', message => {
-if (message.content === x2) {
+if (message.content === x3) {
 message.member.addRole(message.guild.roles.find("name", "►شہريہر◄"));
 const embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
