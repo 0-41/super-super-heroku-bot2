@@ -164,6 +164,13 @@ if (message.content.startsWith("f!cv")) {
     
 }
 });
-
+client.on('message',function(message) {
+  if(!message.channel.guild) return undefined;
+  const swearWords = ["كل زق","كلب","حمار","الشتيمه الي تريد منعه"];
+  if (swearWords.some(word => message.content.includes(word)) ) {
+    message.delete()
+    message.reply("**ممنوع السب**"); 
+  }
+});
 client.login(process.env.BOT_TOKEN);
 
