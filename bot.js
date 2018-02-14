@@ -1,7 +1,5 @@
-const sql = require("sqlite");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-sql.open("./credits.sqlite");
 
 const prefix = "-";
 client.on("message", message => {
