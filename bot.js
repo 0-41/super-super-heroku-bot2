@@ -102,7 +102,7 @@ if (message.content === "!spam") {
         message.channel.send(`سباام يولد يلعن اومم الفله ${x}`)
           .then(m => {
             count++;
-        
+        })
       }
 });
 client.login(process.env.BOT_TOKEN);
