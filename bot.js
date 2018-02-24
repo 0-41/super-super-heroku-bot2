@@ -3,49 +3,44 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
-
 client.on('message', message => {
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send(`اوز عمك يا  تيربو يا ابن القحبه ذي بداية الحرب ${x}`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
-client.on('ready', () => {
-    client.user.setStatus('idle');
-});
-
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**
-      حياك الله ي بعد راسي
-       خش بتنورنا فعاليات وكل شيء حلو موجود !
-        ي بعد عيني الرابط تحت
-         اسم سيرفر OGS (:
-
-                                 [ https://discord.gg/NaSCNd ] **`)
-}).catch(console.error)
-})
-
-client.on("guildMemberRemove", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**
-      حياك الله ي بعد راسي
-       خش بتنورنا فعاليات وكل شيء حلو موجود !
-        ي بعد عيني الرابط تحت
-         OGS server (:
-
-                                 [ https://discord.gg/NaSCNd ] **`)
-}).catch(console.error)
-})
-client.on("message", message => {
+  if (message.content.startsWith('رتبة فورتنايت')) {
+     if(!message.channel.guild) return;
+  message.member.addRole(message.guild.roles.find("name", "fortniet"));
+ 
+ }
+ });
+client.on('message', message => {
+  if (message.content.startsWith('رتبة افرواتش')) {
+     if(!message.channel.guild) return;
+  message.member.addRole(message.guild.roles.find("name", "overwatch"));
+ }
+ });
+client.on('message', message => {
+  if (message.content.startsWith('رتبة سي اس قو')) {
+     if(!message.channel.guild) return;
+  message.member.addRole(message.guild.roles.find("name", "CS GO"));
+ }
+ });
+client.on('message', message => {
+  if (message.content.startsWith('رتبة رينبو 6')) {
+     if(!message.channel.guild) return;
+  message.member.addRole(message.guild.roles.find("name", "Rainbow Six SIEGE"));
+ }
+ });
+client.on('message', message => {
+  if (message.content.startsWith('رتبة لول')) {
+     if(!message.channel.guild) return;
+  message.member.addRole(message.guild.roles.find("name", "League of Legends"));
+ }
+ });
+client.on('message', message => {
+  if (message.content.startsWith('رتبة اقاريو')) {
+     if(!message.channel.guild) return;
+  message.member.addRole(message.guild.roles.find("name", "3rb.be"));
+ }
+ });
+        client.on("message", message => {
     var prefix = "!";
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
