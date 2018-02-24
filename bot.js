@@ -63,4 +63,10 @@ client.on('message', message => {
                             }
                           }
 });
+client.on("guildMemberAdd", member => {
+  consle.log('MEMBER ' + member.username + ' has joined to the server!')
+  var role = member.gulid.roles.find('name', 'MEMBER')
+  member.addrole(role)
+  });
+
 client.login(process.env.BOT_TOKEN);
