@@ -64,9 +64,11 @@ client.on('message', message => {
                           }
 });
 client.on("guildMemberAdd", member => {
-  consle.log('MEMBER ' + member.username + ' has joined to the server!')
-  var role = member.gulid.roles.find('name', 'MEMBER')
-  member.addrole(role)
-  });
+  member.createDM().then(function (author) {
+  return author.send('  يمكن صُدفه تخلق الصُحبه الجميله .حـــيّاك :black_heart:"  رابط سيرفرك')
+
+}).catch(console.error)
+})
+
 
 client.login(process.env.BOT_TOKEN);
