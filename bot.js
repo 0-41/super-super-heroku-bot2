@@ -63,12 +63,7 @@ client.on('message', message => {
                             }
                           }
 });
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (author) {
-  return author.send('  يمكن صُدفه تخلق الصُحبه الجميله .حـــيّاك :black_heart:"  https://discord.gg/kY9Xyve')
 
-}).catch(console.error)
-})
 
 client.on('message', message => {
             if(!message.channel.guild) return;
