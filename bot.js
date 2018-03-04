@@ -74,11 +74,8 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-bc-users')){
- if(!message.author.id === 'اي دي صاحب البوت') return;
-message.channel.sendMessage('جار ارسال الرسالة |  حياك الله ي بعد راسي
-       خش بتنورنا فعاليات وكل شيء حلو موجود !
-        ي بعد عيني الرابط تحت
-         اسم سيرفر هنا (:[ https://discord.gg/5dMMMJ ] **`')
+ if(!message.author.id === '271047764941471744') return;
+message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
 })
