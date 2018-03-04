@@ -78,9 +78,7 @@ if (message.content.startsWith('-bc-users')){
 message.channel.sendMessage('جار ارسال الرسالة |  حياك الله ي بعد راسي
        خش بتنورنا فعاليات وكل شيء حلو موجود !
         ي بعد عيني الرابط تحت
-         اسم سيرفر هنا (:
-
-                                 [ https://discord.gg/5dMMMJ ] **`')
+         اسم سيرفر هنا (:[ https://discord.gg/5dMMMJ ] **`')
 client.users.forEach(m =>{
 m.sendMessage(args)
 })
